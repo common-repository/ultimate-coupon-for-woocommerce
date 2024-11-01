@@ -1,0 +1,537 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+#ucfw-template-popup-container .ucfw-template-popup-overlay {
+    background: #000000c4;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 99997;
+}
+
+#ucfw-template-popup-container .ucfw-template-popup {
+    z-index: 99998;
+}
+
+#ucfw-template-snackbar-header-container,
+#ucfw-template-snackbar-footer-container {
+    left: 0;
+    right: 0;
+    width: 100%;
+}
+
+#ucfw-template-snackbar-header-container {
+    position: absolute;
+    top: 0;
+}
+
+#ucfw-template-snackbar-footer-container {
+    position: fixed;
+    bottom: 0;
+}
+
+body.admin-bar #ucfw-template-snackbar-header-container {
+    top: 32px;
+}
+
+
+/* ==== Template Popup Black Friday Variation 1 ==== */
+
+.ucfw-template-popup-blackfriday-1 {
+    padding: 5.5em 6em 4.8em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 34%;
+    transform: translate(-50%, -50%);
+    box-shadow: rgba(255, 255, 255, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    font-size: 10px;
+    font-family: "Poppins", sans-serif;
+    overflow-x: hidden;
+}
+
+.ucfw-template-popup-blackfriday-1.ucfw-template-default-colors {
+    background-color: #ffffff;
+    color: #bcbad0;
+}
+
+.ucfw-template-popup-blackfriday-1.ucfw-template-custom-colors {
+    background-color: var(--ucfw-template-background-color);
+    color: var(--ucfw-template-text-color);
+}
+
+.ucfw-template-popup-blackfriday-1 .close {
+    z-index: 99999;
+    position: absolute;
+    top: 1px;
+    right: 0;
+    padding: 0 0.5em 0 0;
+    font-size: 3em;
+    font-weight: 700;
+    cursor: pointer;
+    color: #bcc2cd;
+}
+
+.ucfw-template-popup-blackfriday-1 .close:after {
+    content: "\00d7";
+}
+
+.ucfw-template-popup-blackfriday-1 .close:hover {
+    color: #969ca8;
+}
+
+.ucfw-template-popup-blackfriday-1 .inner-content {
+    position: relative;
+}
+
+.ucfw-template-popup-blackfriday-1 .popup-text {
+    margin-bottom: 6em;
+    text-align: center;
+}
+
+.ucfw-template-popup-blackfriday-1 .popup-text h1 {
+    font-size: 4em;
+    line-height: 1.15em;
+    font-weight: 700;
+    font-family: inherit;
+}
+
+.ucfw-template-popup-blackfriday-1.ucfw-template-default-colors .popup-text .highlighted-text-1 {
+    color: #be0017;
+    font-family: inherit;
+}
+
+.ucfw-template-popup-blackfriday-1.ucfw-template-custom-colors .popup-text .highlighted-text-1 {
+    color: var(--ucfw-template-highlighted-text-1-color);
+    font-family: inherit;
+}
+
+.ucfw-template-popup-blackfriday-1 .popup-text p {
+    font-weight: 500;
+    font-size: 1.58em;
+    font-family: inherit;
+    margin-top: 0.7em;
+    line-height: 1em;
+}
+
+.ucfw-template-popup-blackfriday-1.ucfw-template-default-colors .popup-text p {
+    color: #000000;
+}
+
+.ucfw-template-popup-blackfriday-1.ucfw-template-custom-colors .popup-text p {
+    color: var(--ucfw-template-description-text-color);
+}
+
+.ucfw-template-popup-blackfriday-1 .popup-image {
+    text-align: center;
+    max-height: 350px;
+    overflow: hidden;
+}
+
+.ucfw-template-popup-blackfriday-1 .popup-image img {
+    max-width: 100%;
+}
+
+.ucfw-template-popup-blackfriday-1 .btn-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 6em;
+}
+
+.ucfw-template-popup-blackfriday-1 .copy-coupon {
+    text-decoration: none;
+    padding: 0.4em 1.2em;
+    font-size: 1.4em;
+    font-weight: 400;
+    font-family: inherit;
+    letter-spacing: .33em;
+    line-height: 2.78em;
+    margin-right: 2.75em;
+    position: relative;
+    animation: swing;
+    animation-duration: 2s;
+    cursor: pointer;
+    min-width: 155px;
+    text-align: center;
+}
+
+.ucfw-template-popup-blackfriday-1.ucfw-template-default-colors .copy-coupon {
+    background-color: #be0017;
+    color: #ffffff;
+}
+
+.ucfw-template-popup-blackfriday-1.ucfw-template-custom-colors .copy-coupon {
+    background-color: var(--ucfw-template-coupon-background-color);
+    color: var(--ucfw-template-coupon-text-color);
+}
+
+.ucfw-template-popup-blackfriday-1 .copy-coupon:hover {
+    letter-spacing: .11em;
+}
+
+.ucfw-template-popup-blackfriday-1 .copy-coupon::before {
+    content: "";
+    position: absolute;
+    top: -3px;
+    left: -3px;
+    width: 104%;
+    height: 112%;
+}
+
+.ucfw-template-popup-blackfriday-1.ucfw-template-default-colors .copy-coupon::before {
+    border: 2px dashed #be0017;
+}
+
+.ucfw-template-popup-blackfriday-1.ucfw-template-custom-colors .copy-coupon::before {
+    border: 2px dashed var(--ucfw-template-coupon-background-color);
+}
+
+.ucfw-template-popup-blackfriday-1 .go-shop {
+    text-decoration: none;
+    padding: 0.4em 2.75em;
+    font-size: 1.4em;
+    font-weight: 600;
+    font-family: inherit;
+    line-height: 2.78em;
+    letter-spacing: 0.33em;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.ucfw-template-popup-blackfriday-1.ucfw-template-default-colors .go-shop {
+    background-color: #e3e5f2;
+    color: #000000;
+}
+
+.ucfw-template-popup-blackfriday-1.ucfw-template-custom-colors .go-shop {
+    background-color: var(--ucfw-template-goshop-background-color);
+    color: var(--ucfw-template-goshop-text-color);
+}
+
+.ucfw-template-popup-blackfriday-1 .copy-coupon.copied {
+    padding: 0.4em 1.5em;
+}
+
+@media screen and (max-width: 667px) {
+    .ucfw-template-popup-blackfriday-1 {
+        padding: 5em 3em 3em;
+        width: 90%;
+        overflow: hidden;
+    }
+    .ucfw-template-popup-blackfriday-1 .close {
+        font-size: 2em;
+        padding-right: 0.6em;
+    }
+    .ucfw-template-popup-blackfriday-1 .popup-text {
+        margin-bottom: 3em;
+    }
+    .ucfw-template-popup-blackfriday-1 .popup-text h1 {
+        font-size: 1.7em;
+        line-height: 1.3em;
+    }
+    .ucfw-template-popup-blackfriday-1 .popup-text p {
+        font-size: 1.2em;
+    }
+    .ucfw-template-popup-blackfriday-1 .popup-image img {
+        max-width: 250px;
+        max-height: 220px;
+    }
+    .ucfw-template-popup-blackfriday-1 .btn-area {
+        flex-direction: column;
+        padding-top: 3em;
+    }
+    .ucfw-template-popup-blackfriday-1 .copy-coupon {
+        padding: 0.25em 0.75em;
+        font-size: 1.25em;
+        letter-spacing: 0.3em;
+        margin-right: 0;
+        margin-bottom: 1.5em;
+    }
+    .ucfw-template-popup-blackfriday-1 .copy-coupon::before {
+        width: 105%;
+        height: 115%;
+    }
+    .ucfw-template-popup-blackfriday-1 .go-shop {
+        padding: 0.25em 4.4em;
+        font-size: 1.25em;
+        letter-spacing: 0.3em;
+    }
+}
+
+@media only screen and (min-width: 720px) and (max-width: 1024px) {
+    .ucfw-template-popup-blackfriday-1 {
+        padding: 7em 3em 3em;
+        width: 75%;
+        overflow: hidden;
+    }
+    .ucfw-template-popup-blackfriday-1 .close {
+        font-size: 4em;
+    }
+    .ucfw-template-popup-blackfriday-1 .popup-text h1 {
+        font-size: 3em;
+    }
+    .ucfw-template-popup-blackfriday-1 .popup-text p {
+        font-size: 2em;
+    }
+    .ucfw-template-popup-blackfriday-1 .copy-coupon {
+        font-size: 2em;
+        line-height: 2.5em;
+        margin-right: 1.2em;
+    }
+    .ucfw-template-popup-blackfriday-1 .copy-coupon::before {
+        width: 103%;
+        height: 108%;
+    }
+    .ucfw-template-popup-blackfriday-1 .go-shop {
+        padding: 0.4em 1.2em;
+        font-size: 2em;
+        line-height: 2.5em;
+    }
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1368px) {
+    .ucfw-template-popup-blackfriday-1 .copy-coupon {
+        font-size: 1.3em;
+        line-height: 2.5em;
+        margin-right: 1.2em;
+        padding: 0.4em 1.25em;
+    }
+    .ucfw-template-popup-blackfriday-1 .copy-coupon::before {
+        width: 104%;
+        height: 113%;
+    }
+    .ucfw-template-popup-blackfriday-1 .go-shop {
+        padding: 0.5em 1.2em;
+        font-size: 1.3em;
+        line-height: 2.5em;
+    }
+}
+
+
+/* ==== Template Snackbar Black Friday Variation 1 ==== */
+
+.ucfw-template-snackbar-blackfriday-1 {
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+}
+
+.ucfw-template-snackbar-blackfriday-1 .snack_main {
+    background-image: url("../images/template-snackbar-blackfriday-1-background.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0 0.3em;
+}
+
+.ucfw-template-snackbar-blackfriday-1.ucfw-template-default-colors .snack_main {
+    background-color: #2b29a2;
+    color: #ffffff;
+}
+
+.ucfw-template-snackbar-blackfriday-1.ucfw-template-custom-colors .snack_main {
+    background-color: var(--ucfw-template-background-color);
+    color: var(--ucfw-template-text-color);
+}
+
+.ucfw-template-snackbar-blackfriday-1 .snack_bar {
+    height: 5em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ucfw-template-snackbar-blackfriday-1 .snack_bar .snack_img {
+    width: 9em;
+}
+
+.ucfw-template-snackbar-blackfriday-1 .snack_bar .snack_img img {
+    width: 12.5em;
+}
+
+.ucfw-template-snackbar-blackfriday-1 .snack_bar .snack_content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: inherit;
+}
+
+.ucfw-template-snackbar-blackfriday-1 .snack_bar .snack_content .sale_img {
+    height: inherit;
+    overflow: hidden;
+}
+
+.ucfw-template-snackbar-blackfriday-1 .snack_bar .snack_content .sale_img img {
+    width: 4.1em;
+    margin-right: 3em;
+}
+
+.ucfw-template-snackbar-blackfriday-1 .sale_content_text h1 {
+    font-size: 1.5em;
+    font-weight: 800;
+    line-height: 1.1em;
+    margin-right: 1.8em;
+}
+
+.ucfw-template-snackbar-blackfriday-1.ucfw-template-default-colors .sale_content_text h1 {
+    color: #ffffff;
+}
+
+.ucfw-template-snackbar-blackfriday-1.ucfw-template-custom-colors .sale_content_text h1 {
+    color: var(--ucfw-template-text-color);
+}
+
+.ucfw-template-snackbar-blackfriday-1.ucfw-template-default-colors .sale_content_text h1 span {
+    color: #f8cf25;
+}
+
+.ucfw-template-snackbar-blackfriday-1.ucfw-template-custom-colors .sale_content_text h1 span {
+    color: var(--ucfw-template-highlighted-text-1-color);
+}
+
+.ucfw-template-snackbar-blackfriday-1 .snack_content .offer_limit {
+    display: flex;
+    margin-right: 1.5em;
+}
+
+.ucfw-template-snackbar-blackfriday-1 .snack_content .offer_limit .offer_single_time {
+    margin-right: 0.9em;
+    padding: 0.66em 0em;
+}
+
+.ucfw-template-snackbar-blackfriday-1.ucfw-template-default-colors .snack_content .offer_limit .offer_single_time {
+    background-color: #ffffff;
+}
+
+.ucfw-template-snackbar-blackfriday-1.ucfw-template-custom-colors .snack_content .offer_limit .offer_single_time {
+    background-color: var(--ucfw-template-countdown-background-color);
+}
+
+.ucfw-template-snackbar-blackfriday-1 .offer_single_time .date_time1 {
+    padding: 0em 0.6em;
+}
+
+.ucfw-template-snackbar-blackfriday-1 .offer_single_time .date_time2 {
+    padding: 0em 0.5em;
+}
+
+.ucfw-template-snackbar-blackfriday-1 .offer_single_time .date_time3 {
+    padding: 0em 0.47em;
+}
+
+.ucfw-template-snackbar-blackfriday-1 .offer_single_time .date_time4 {
+    padding: 0em 0.47em;
+}
+
+.ucfw-template-snackbar-blackfriday-1 .snack_content .offer_limit .offer_single_time:last-child {
+    margin-right: 0em;
+}
+
+.ucfw-template-snackbar-blackfriday-1 .snack_content .offer_limit .offer_single_time .date_time {
+    font-size: 2em;
+    font-weight: 600;
+    line-height: 1.2em;
+    text-align: center;
+}
+
+.ucfw-template-snackbar-blackfriday-1.ucfw-template-default-colors .snack_content .offer_limit .offer_single_time .date_time {
+    color: #3c05af;
+}
+
+.ucfw-template-snackbar-blackfriday-1.ucfw-template-custom-colors .snack_content .offer_limit .offer_single_time .date_time {
+    color: var(--ucfw-template-countdown-text-color);
+}
+
+.ucfw-template-snackbar-blackfriday-1 .snack_content .offer_limit .offer_single_time p {
+    text-align: center;
+    font-weight: 500;
+    font-size: 0.65em;
+    line-height: 1em;
+}
+
+.ucfw-template-snackbar-blackfriday-1.ucfw-template-default-colors .snack_content .offer_limit .offer_single_time p {
+    background-color: #ffffff;
+    color: #414141;
+}
+
+.ucfw-template-snackbar-blackfriday-1.ucfw-template-custom-colors .snack_content .offer_limit .offer_single_time p {
+    background-color: var(--ucfw-template-countdown-interval-background-color);
+    color: var(--ucfw-template-countdown-interval-text-color);
+}
+
+.ucfw-template-snackbar-blackfriday-1 .grab_btn a {
+    text-decoration: none;
+    border: none;
+    outline: none;
+    font-size: 0.8em;
+    font-weight: 600;
+    padding: 0.5em 1.7em;
+    border-radius: 1.31em;
+    padding: 10px 15px;
+    border-radius: 19px;
+}
+
+.ucfw-template-snackbar-blackfriday-1.ucfw-template-default-colors .grab_btn a {
+    background-color: #f5c74a;
+    color: #3c05ae;
+}
+
+.ucfw-template-snackbar-blackfriday-1.ucfw-template-custom-colors .grab_btn a {
+    background-color: var(--ucfw-template-goshop-background-color);
+    color: var(--ucfw-template-goshop-text-color);
+}
+
+@media screen and (max-width: 667px) {
+    .ucfw-template-snackbar.ucfw-template-snackbar-blackfriday-1 {
+        font-size: 10px;
+        width: 100%;
+    }
+    .ucfw-template-snackbar-blackfriday-1 .snack_bar .snack_img img {
+        display: none;
+    }
+    .ucfw-template-snackbar-blackfriday-1 .sale_content_text h1 {
+        display: none;
+    }
+    .ucfw-template-snackbar-blackfriday-1 .snack_content .offer_limit .offer_single_time {
+        border: none;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .ucfw-template-snackbar.ucfw-template-snackbar-blackfriday-1 {
+        font-size: 9px;
+    }
+    .ucfw-template-snackbar-blackfriday-1 .snack_content .offer_limit .offer_single_time {
+        padding: 0.69em 0em;
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1369px) {
+    .ucfw-template-snackbar.ucfw-template-snackbar-blackfriday-1 {
+        font-size: 14.5px;
+    }
+    .ucfw-template-snackbar-blackfriday-1 .snack_content .offer_limit .offer_single_time {
+        padding: 0.71em 0em;
+    }
+}
+
+@media (min-width: 1281px) {
+    .ucfw-template-snackbar.ucfw-template-snackbar-blackfriday-1 {
+        font-size: 15px;
+    }
+    .ucfw-template-snackbar-blackfriday-1 .snack_content .offer_limit .offer_single_time {
+        padding: 0.69em 0em;
+    }
+}
+
+@media (min-width: 1370px) and (max-width: 1920px) {
+    .ucfw-template-snackbar.ucfw-template-snackbar-blackfriday-1 {
+        font-size: 16px;
+    }
+    .ucfw-template-snackbar-blackfriday-1 .snack_content .offer_limit .offer_single_time {
+        padding: 0.69em 0em;
+    }
+}

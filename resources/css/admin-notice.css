@@ -1,0 +1,24 @@
+/*
+Admin notice
+*/
+.ucfw-plugin-required-notice {
+	overflow: hidden;
+	padding: 15px 15px;
+}
+.ucfw-plugin-required-notice img.ucfw-logo {
+	max-height: 48px;
+	float: left;
+}
+.ucfw-plugin-required-notice .ucfw-admin-notice-content {
+	float: left;
+	padding-left: 20px;
+}
+.ucfw-plugin-required-notice .ucfw-admin-notice-content h2 {
+	margin: 0;
+	font-size: 18px;
+	color: #4636ff;
+}
+.ucfw-plugin-required-notice .ucfw-admin-notice-content p {
+	margin: 0;
+	margin-top: 5px;
+}
